@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: rgba(0, 255, 255, 0.163);
+
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    background: #fdfdfd;
+    min-width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    margin: 3rem 0;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+.todo-form{
+    margin: 6rem 2rem .5rem 2rem;
+    min-width: 90%;
+    text-align: center;
+}
+.todo-form h2{
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+.todo-form h2 span{
+    color: rgb(1, 212, 1);
+}
+.todo-form-control{
+    min-width: 80%;
+    background: rgba(128, 128, 128, 0.085);
+    margin-bottom:1rem ;
+    border-radius: .5rem;
+
+
+}
+.todo-form-control input{
+    font-size: .9rem;
+    padding: .4rem .5rem;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin: 0;
+    width: 70%;
+}
+.todo-form-control button{
+    cursor: pointer;
+    padding: 0rem 1rem;
+    width: 28%;
+    height: 100%;
+    margin: 0;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    background: rgba(0, 187, 255, 0.807);
+}
+
+.todo-container{
+    width: 80%;
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: center;
+    visibility: hidden;
+}
+.todo-list{
+    width: 100%;
+    text-align: center;
+}
+
+.main-item{
+    padding: .3rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 1.3rem .8rem;
+    border-radius: 8px;
+    background: rgba(0, 255, 255, 0.04);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.item{
+    padding: .3rem;
+    margin: .2rem 0;
+
+}
+.btn-container{
+    min-width: 15%;
+}
+
+.btn-container button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+i{
+    cursor: pointer;
+    padding: .3rem;
+    font-size: .9rem;
+    border-radius: 50%;
+    transition: all .1s linear;
+}
+.edit-btn i:hover{
+    background-color: rgba(7, 203, 7, 0.635);
+}
+.delete-btn i:hover{
+    background-color: rgba(209, 0, 0, 0.423);
+}
+.edit-btn i{
+    background-color: white;
+}
+.delete-btn i{
+    background-color: white;
+}
+
+.clear-all{
+    color: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0px;
+    border: transparent;
+    background: transparent;
+    font-size: .9rem;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    font-weight: bold;
+    visibility: hidden;
+}
+.clear-all:hover{
+    color: red;
+}
+
+
+@media (max-width:23em){
+    html{
+        font-size: .8rem;
+    }
+}
